@@ -1,0 +1,16 @@
+presets:
+  # Adds settings that make tests quicker and more readable when running on CI.
+  ci:
+    chain_stack_traces: false
+    reporter: expanded
+
+  # Executes test cases within the browser.
+  browser:
+    platforms:
+      - chrome
+    js_trace: true
+
+  # Executes test cases within the standalone VM.
+  headless:
+    platforms:
+      - vm
