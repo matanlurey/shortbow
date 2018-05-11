@@ -12,10 +12,10 @@ class Color {
   ///
   /// The bits are assigned as follows:
   ///
-  /// * Bits 24-31 are the alpha value.
-  /// * Bits 16-23 are the red value.
-  /// * Bits 8-15 are the green value.
-  /// * Bits 0-7 are the blue value.
+  /// * Bits 24-31 are the [alpha] value.
+  /// * Bits 16-23 are the [red] value.
+  /// * Bits 8-15 are the [green] value.
+  /// * Bits 0-7 are the [blue] value.
   final int value;
 
   /// Create a color from the lower 32 bits of an [int].
