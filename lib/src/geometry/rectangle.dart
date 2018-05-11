@@ -14,8 +14,8 @@ class Rectangle {
   /// Width of the rectangle.
   final int width;
 
-  /// Creates a rectangle at [x] and [y] of the specified [height], [width].
-  const Rectangle(int x, int y, this.height, this.width)
+  /// Creates a rectangle at [x] and [y] of the specified [width] and [height].
+  const Rectangle(int x, int y, this.width, this.height)
       : assert(x != null && x >= 0),
         assert(y != null && y >= 0),
         assert(height != null && height >= 1),
