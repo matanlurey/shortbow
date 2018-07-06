@@ -4,7 +4,7 @@ import '../common.dart';
 @Immutable()
 class Point {
   /// Represents `(0, 0)` in the coordinate system.
-  static const Point origin = const Point(0, 0);
+  static const Point origin = Point(0, 0);
 
   /// X-axis coordinate.
   final int x;
@@ -20,7 +20,7 @@ class Point {
         assert(y != null && y >= 0);
 
   @override
-  bool operator==(Object other) {
+  bool operator ==(Object other) {
     if (other is Point) {
       return x == other.x && y == other.y;
     }
@@ -32,7 +32,7 @@ class Point {
 
   @override
   String toString() {
-    if (isDebugMode) {
+    if (assertionsEnabled) {
       return '$Point {$x, $y}';
     }
     return super.toString();

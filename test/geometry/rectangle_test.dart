@@ -5,7 +5,7 @@ import 'package:test/test.dart';
 void main() {
   group('$Rectangle', () {
     test('should correctly set coordinates', () {
-      const rect = const Rectangle(2, 4, 4, 8);
+      const rect = Rectangle(2, 4, 4, 8);
       expect(rect.left, 2);
       expect(rect.top, 4);
       expect(rect.width, 4);
@@ -23,7 +23,7 @@ void main() {
         '${const Rectangle(2, 4, 4, 8)}',
         '$Rectangle {l = 2, t = 4, w = 4, h = 8}',
       );
-    }, skip: !isDebugMode);
+    }, skip: !assertionsEnabled);
   });
 }
 
@@ -32,4 +32,4 @@ void main() {
 // In an actual application this is not important, in this test we want to
 // specifically call it out (we are testing the behavior of value-type-like
 // object).
-Rectangle _newRect(int x, int y, int w, int h) => new Rectangle(x, y, w, h);
+Rectangle _newRect(int x, int y, int w, int h) => Rectangle(x, y, w, h);

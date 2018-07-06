@@ -10,7 +10,7 @@ void main() {
     });
 
     test('should correctly set an x and y coordinate', () {
-      const point = const Point(5, 10);
+      const point = Point(5, 10);
       expect(point.x, 5);
       expect(point.y, 10);
     });
@@ -22,7 +22,7 @@ void main() {
 
     test('should have a readable toString() in debug mode', () {
       expect('${const Point(1, 2)}', '$Point {1, 2}');
-    }, skip: !isDebugMode);
+    }, skip: !assertionsEnabled);
   });
 }
 
@@ -31,4 +31,4 @@ void main() {
 // In an actual application this is not important, in this test we want to
 // specifically call it out (we are testing the behavior of value-type-like
 // object).
-Point _newPoint(int x, int y) => new Point(x, y);
+Point _newPoint(int x, int y) => Point(x, y);

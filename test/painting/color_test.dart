@@ -5,7 +5,7 @@ import 'package:test/test.dart';
 void main() {
   group('$Color', () {
     test('should extract various values properly', () {
-      const fullyOpaqueOrange = const Color(0xFFFF9000);
+      const fullyOpaqueOrange = Color(0xFFFF9000);
       expect(fullyOpaqueOrange.alpha, 0xFF);
       expect(fullyOpaqueOrange.red, 0xFF);
       expect(fullyOpaqueOrange.green, 0x90);
@@ -14,7 +14,7 @@ void main() {
       expect(
         '$fullyOpaqueOrange',
         'Color {0xFFFF9000}',
-        skip: !isDebugMode,
+        skip: !assertionsEnabled,
       );
     });
   });

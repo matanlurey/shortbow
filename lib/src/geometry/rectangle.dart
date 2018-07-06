@@ -14,16 +14,12 @@ class Rectangle {
   /// Width of the rectangle.
   final int width;
 
-  /// Creates a rectangle at [x] and [y] of the specified [width] and [height].
-  const Rectangle(int x, int y, this.width, this.height)
-      : assert(x != null && x >= 0),
-        assert(y != null && y >= 0),
+  /// Creates a rectangle at [left] [top] of [width] [height].
+  const Rectangle(this.left, this.top, this.width, this.height)
+      : assert(left != null && left >= 0),
+        assert(top != null && top >= 0),
         assert(height != null && height >= 1),
-        assert(width != null && width >= 1),
-        // ignore: prefer_initializing_formals
-        left = x,
-        // ignore: prefer_initializing_formals
-        top = y;
+        assert(width != null && width >= 1);
 
   /// Right position of the rectangle.
   int get right => left + width;
@@ -47,7 +43,7 @@ class Rectangle {
 
   @override
   String toString() {
-    if (isDebugMode) {
+    if (assertionsEnabled) {
       return '$Rectangle {l = $left, t = $top, w = $width, h = $height}';
     }
     return super.toString();

@@ -89,7 +89,7 @@ class Color {
   int get blue => (0x000000FF & value) >> 0;
 
   @override
-  bool operator==(Object other) {
+  bool operator ==(Object other) {
     if (identical(this, other)) {
       return true;
     }
@@ -104,7 +104,7 @@ class Color {
 
   @override
   String toString() {
-    if (isDebugMode) {
+    if (assertionsEnabled) {
       final hexString = value.toRadixString(16).toUpperCase();
       return 'Color {0x${hexString.padLeft(8, '0')}}';
     }
