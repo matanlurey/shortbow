@@ -1,6 +1,8 @@
 # shortbow 🏹
 
-A lightweight 2D game engine built for usability.
+_This library is incomplete and a work in-progress._
+
+A lightweight 2D game utility library built for usability.
 
 It is _inspired_ by the following projects:
 
@@ -10,13 +12,10 @@ It is _inspired_ by the following projects:
 
 ## Technical Overview
 
-### References
-
-* ...
-
 ### Libraries
 
-Shortbow is a collection of libraries to facilitate the creation of your next awesome 2D web-based game, written in [Dart](https://dartlang.org), a modern object-oriented programming language.
+Shortbow is a collection of libraries to facilitate the creation of your next awesome 2D web-based game, written in [Dart](https://dartlang.org), a modern object-oriented programming language. Some of the elements of this library are more
+specific to writing a simple game engine, and others are more related to game mechanics or common patterns needed.
 
 #### `geometry.dart`
 
