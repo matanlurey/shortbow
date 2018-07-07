@@ -1,7 +1,7 @@
-import '../common.dart';
+import '../common.dart' show assertionsEnabled, hash2, immutable;
 
 /// A 2-dimensional [x] and [y] coordinate pair.
-@Immutable()
+@immutable
 class Point {
   /// Represents `(0, 0)` in the coordinate system.
   static const Point origin = Point(0, 0);

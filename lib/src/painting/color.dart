@@ -1,4 +1,4 @@
-import 'package:shortbow/src/common.dart';
+import '../common.dart' show assertionsEnabled, immutable;
 
 // Mostly adapted from the `Color` class from Flutter's Engine:
 // https://github.com/flutter/engine/blob/master/lib/ui/painting.dart
@@ -6,7 +6,7 @@ import 'package:shortbow/src/common.dart';
 // Thanks to everyone involved in creating (and testing) that code!
 
 /// An immutable 32-bit color value in ARGB format.
-@Immutable()
+@immutable
 class Color {
   /// A 32 bit value representing this color.
   ///
