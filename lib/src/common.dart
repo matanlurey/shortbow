@@ -3,7 +3,8 @@
 /// @nodoc
 library shortbow.src.common;
 
-export 'package:meta/meta.dart' show immutable, visibleForOverriding;
+export 'package:meta/meta.dart'
+    show immutable, optionalTypeArgs, visibleForOverriding;
 
 /// Whether or not `assert(...)` is enabled in the current runtime.
 ///

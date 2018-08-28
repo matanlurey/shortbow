@@ -3,16 +3,16 @@ import '../common.dart';
 /// A 2-dimensional [Rectangle], represented by coordinates and width/height.
 class Rectangle {
   /// Origin x-axis coordinate.
-  final int left;
+  final num left;
 
   /// Origin y-axis coordinate.
-  final int top;
+  final num top;
 
   /// Height of the rectangle.
-  final int height;
+  final num height;
 
   /// Width of the rectangle.
-  final int width;
+  final num width;
 
   /// Creates a rectangle at [left] [top] of [width] [height].
   const Rectangle(this.left, this.top, this.width, this.height)
@@ -22,10 +22,10 @@ class Rectangle {
         assert(width != null && width >= 1);
 
   /// Right position of the rectangle.
-  int get right => left + width;
+  num get right => left + width;
 
   /// Bottom position of the rectangle.
-  int get bottom => top + height;
+  num get bottom => top + height;
 
   @override
   bool operator ==(Object o) {
