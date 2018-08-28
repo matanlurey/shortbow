@@ -34,6 +34,11 @@ void main() {
       expect(const Vector(1, 2).scaleBy(2), const Vector(2, 4));
     });
 
+    test('should divide coordinates', () {
+      expect(const Vector(4, 16) / const Vector(1, 2), const Vector(4, 8));
+      expect(const Vector(4, 16).divideBy(1, 2), const Vector(4, 8));
+    });
+
     test('should have a readable toString() in debug mode', () {
       expect('${const Vector(1, 2)}', '$Vector {1, 2}');
     }, skip: !assertionsEnabled);
