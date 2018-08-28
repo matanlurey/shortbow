@@ -4,6 +4,8 @@ _This library is incomplete and a work in-progress._
 
 A lightweight 2D game utility library built for usability.
 
+[![Build Status](https://travis-ci.org/matanlurey/shortbow.svg?branch=master)](https://travis-ci.org/matanlurey/shortbow)
+
 It is _inspired_ by the following projects:
 
 * [PixiJS](http://pixijs.download/dev/docs/index.html)
