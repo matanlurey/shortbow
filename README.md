@@ -26,12 +26,12 @@ game mechanics or common patterns needed.
 
 #### `geometry.dart`
 
-Math functions and value-type primitives used in the engine.
+Math functions and value-type primitives useful in games.
 
 #### `mechanics.dart`
 
 Different mechanics-related APIs, such as dice, decks of cards, and more.
 
-#### `painting.dart`
+#### `drawing.dart`
 
-Low-level 2D painting library that abstracts away platform-specific APIs.
+Drawing libraries and classes that abstract away platform-specific APIs.
