@@ -1,1 +1,1 @@
-export 'src/painting/color.dart' show Color;
+export 'src/drawing/color.dart' show Color;

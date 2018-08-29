@@ -1,8 +1,17 @@
 /// Represents an user-interface input during a game loop.
-abstract class Input {}
+abstract class Input {
+  /// Whether the input is currently active.
+  bool get active;
+
+  /// Whether the input is currently inactive.
+  bool get inactive => !active;
+}
 
 /// Produces an [input], buffering events until [update] is invoked.
 abstract class InputController<T extends Input> {
+  /// Whether the [input] should be considered active after [update].
+  bool active = false;
+
   /// Produced input.
   T get input;
 
@@ -12,12 +21,6 @@ abstract class InputController<T extends Input> {
 
 /// Represents a binary [active] or [inactive] state input.
 abstract class Button extends Input {
-  /// Whether the button is currently active (i.e. pressed).
-  bool get active;
-
-  /// Whether the button is currently inactive.
-  bool get inactive => !active;
-
   /// Returns a new button that is [active] when `this` _and_ [other] is.
   Button operator +(Button other) => _CompositeButton([this, other]);
 }
@@ -42,9 +45,6 @@ class ButtonController extends InputController<Button> {
 
   @override
   Button get input => _input;
-
-  /// Whether the [input] button should be considered active after [update].
-  bool active = false;
 
   @override
   void update() {
