@@ -15,6 +15,7 @@ class Rectangle {
   final num width;
 
   /// Creates a rectangle at [left] [top] of [width] [height].
+  @literal
   const Rectangle(this.left, this.top, this.width, this.height)
       : assert(left != null && left >= 0),
         assert(top != null && top >= 0),

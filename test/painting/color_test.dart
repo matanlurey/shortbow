@@ -10,7 +10,6 @@ void main() {
       expect(fullyOpaqueOrange.red, 0xFF);
       expect(fullyOpaqueOrange.green, 0x90);
       expect(fullyOpaqueOrange.blue, 0x00);
-
       expect(
         '$fullyOpaqueOrange',
         'Color {0xFFFF9000}',

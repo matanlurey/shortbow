@@ -1,4 +1,4 @@
-import '../common.dart' show assertionsEnabled, immutable;
+import '../common.dart';
 
 // Mostly adapted from the `Color` class from Flutter's Engine:
 // https://github.com/flutter/engine/blob/master/lib/ui/painting.dart
@@ -34,6 +34,7 @@ class Color {
   /// For example, to get a fully opaque orange, you would use `const
   /// Color(0xFFFF9000)` (`FF` for the alpha, `FF` for the red, `90` for the
   /// green, and `00` for the blue).
+  @literal
   const Color(int value) : value = value & 0xFFFFFFFF;
 
   /// Construct a color from the lower 8 bits of four integers.
@@ -44,6 +45,7 @@ class Color {
   /// * [b] is [red], from 0 to 255.
   ///
   /// Out of range values are brought into range using modulo 255.
+  @literal
   const Color.fromARGB(int a, int r, int g, int b)
       : value = (((a & 0xFF) << 24) |
                 ((r & 0xFF) << 16) |
@@ -60,6 +62,7 @@ class Color {
   ///   being transparent and `1.0` being fully opaque.
   ///
   /// Out of range values are brought into range using modulo 255.
+  @literal
   const Color.fromRGBO(int r, int g, int b, double opacity)
       : value = ((((opacity * 0xFF ~/ 1) & 0xFF) << 24) |
                 ((r & 0xFF) << 16) |
@@ -90,9 +93,6 @@ class Color {
 
   @override
   bool operator ==(Object other) {
-    if (identical(this, other)) {
-      return true;
-    }
     if (other is Color) {
       return value == other.value;
     }
