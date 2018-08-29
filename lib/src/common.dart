@@ -4,7 +4,7 @@
 library shortbow.src.common;
 
 export 'package:meta/meta.dart'
-    show immutable, optionalTypeArgs, visibleForOverriding;
+    show immutable, literal, optionalTypeArgs, visibleForOverriding;
 
 /// Whether or not `assert(...)` is enabled in the current runtime.
 ///

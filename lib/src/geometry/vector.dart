@@ -1,5 +1,4 @@
-import '../common.dart'
-    show assertionsEnabled, hash2, immutable, optionalTypeArgs;
+import '../common.dart';
 
 /// An immmutable pair of [x] and [y] coordinates.
 ///
@@ -21,6 +20,7 @@ class Vector {
   /// Creates a point from the provided x and y-axis coordinates.
   ///
   /// Coordinates must be non-null and at least `0` (no negative values).
+  @literal
   const Vector(this.x, this.y)
       : assert(x != null && x >= 0),
         assert(y != null && y >= 0);
