@@ -19,7 +19,7 @@ abstract class Button extends Input {
   bool get inactive => !active;
 
   /// Returns a new button that is [active] when `this` _and_ [other] is.
-  Button operator+(Button other) => _CompositeButton([this, other]);
+  Button operator +(Button other) => _CompositeButton([this, other]);
 }
 
 class _Button extends Button {
