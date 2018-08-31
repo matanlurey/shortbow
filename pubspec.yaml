@@ -2,7 +2,7 @@ name: shortbow
 description: Utility library for game programming
 author: Matan Lurey <matan@lurey.org>
 homepage: https://github.com/matanlurey/shortbow
-version: 0.0.1
+version: 0.1.0
 
 environment:
   sdk: '>=2.0.0-dev.67.0 <3.0.0'
