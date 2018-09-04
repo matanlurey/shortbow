@@ -1,4 +1,5 @@
-import '../common.dart';
+import 'package:shortbow/common.dart';
+import 'package:meta/meta.dart';
 
 /// An immmutable pair of [x] and [y] coordinates.
 ///

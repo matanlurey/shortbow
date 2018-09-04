@@ -24,14 +24,18 @@ object-oriented programming language. Some of the elements of this library are
 more specific to writing a simple game engine, and others are more related to
 game mechanics or common patterns needed.
 
-#### `geometry.dart`
+#### `common.dart`
+
+Common useful methods when using this library (and used _by_ this library).
+
+#### `drawing.dart`
+
+Drawing libraries and classes that abstract away platform-specific APIs.
+
+#### `math.dart`
 
 Math functions and value-type primitives useful in games.
 
 #### `mechanics.dart`
 
 Different mechanics-related APIs, such as dice, decks of cards, and more.
-
-#### `drawing.dart`
-
-Drawing libraries and classes that abstract away platform-specific APIs.

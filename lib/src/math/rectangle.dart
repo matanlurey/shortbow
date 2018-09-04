@@ -1,4 +1,5 @@
-import '../common.dart';
+import 'package:shortbow/common.dart';
+import 'package:meta/meta.dart';
 
 /// A 2-dimensional [Rectangle], represented by coordinates and width/height.
 class Rectangle {

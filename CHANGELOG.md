@@ -1,3 +1,8 @@
+## v0.2.0
+
+* Renamed the `geometry.dart` library to `math.dart`.
+* Added `common.dart` with hash functions and `assertionsEnabled`.
+
 ## v0.1.0
 
 * Renamed `Point` -> `Vector`.

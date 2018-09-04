@@ -1,5 +1,5 @@
+import 'package:shortbow/common.dart';
 import 'package:shortbow/painting.dart';
-import 'package:shortbow/src/common.dart';
 import 'package:test/test.dart';
 
 void main() {
