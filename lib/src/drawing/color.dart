@@ -1,4 +1,5 @@
-import '../common.dart';
+import 'package:shortbow/common.dart';
+import 'package:meta/meta.dart';
 
 // Mostly adapted from the `Color` class from Flutter's Engine:
 // https://github.com/flutter/engine/blob/master/lib/ui/painting.dart
